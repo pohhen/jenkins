@@ -7,6 +7,6 @@ node {
         git url: 'https://github.com/pohhen/jenkins.git'
     }
     stage('Docker build') {
-        docker build .
+        sh 'docker build .'
     }
 }
