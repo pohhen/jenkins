@@ -1,10 +1,8 @@
-FROM    jenkins/jenkins:latest
+FROM    jenkins/jenkins
 
 # User root for installs
 USER    root
 
-RUN     apt-get update
-RUN     apt-get -y install curl sudo mailutils rsync libxml2-utils
 # Get Docker binaries
 RUN     curl -fsSLO https://download.docker.com/linux/static/stable/x86_64/docker-17.12.0-ce.tgz && tar --strip-components=1 -xvzf docker-17.12.0-ce.tgz -C /usr/local/bin
 
