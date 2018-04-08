@@ -36,7 +36,7 @@ if (!("$custom_user" in currentUsers) && (custom_user?.trim()) && (custom_passwd
 }
 
 if (!('admin' in currentUsers) && !("$no_admin" == 'true')) {
-    println "--> creating local user 'admin'"
+    println "\n--> creating local user 'admin'"
     println "WARNING: Remember to change the admin password!"
 
     // Generate an initial admin password
