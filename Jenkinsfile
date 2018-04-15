@@ -3,6 +3,9 @@
 // Basic Jenkinsfile example - just building the Dockerfile of Jenkins
 
 node {
+    triggers {
+        cron('H * * * *')
+    }
     timestamps {
         timeout(20) {  // Timeout build after 20 minuts, don't leave me hanging!
             stage('Git checkout') {
