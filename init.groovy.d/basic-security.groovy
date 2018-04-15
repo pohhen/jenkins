@@ -51,6 +51,7 @@ if (!('admin' in currentUsers) && !("$no_admin" == 'true')) {
 }
 
 def strategy = new FullControlOnceLoggedInAuthorizationStrategy()
+strategy.setAllowAnonymousRead(false)
 instance.setAuthorizationStrategy(strategy)
 
 instance.save()

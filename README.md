@@ -22,3 +22,4 @@ Open browser: [http://localhost:<host_port>](http://localhost)
 * admin user created with generated password if user does not exist
 * you can create your own user with env variables
 * you can add default plugins to plugins.txt that are installed during creation
+* seed-job contais job config xmls
