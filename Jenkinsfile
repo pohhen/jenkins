@@ -4,7 +4,7 @@
 
 node {
     stage('Git checkout') {
-        git url: 'https://github.com/pohhen/jenkins.git'
+        checkout scm
     }
     stage('Docker build') {
         sh 'docker build .'
