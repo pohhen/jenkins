@@ -19,8 +19,8 @@ services:
     privileged: true
     ports:
       - "8000:8080"
-    volumes:
+    #volumes:
       # Needed to run docker inside docker
-      - /var/run/docker.sock:/var/run/docker.sock
+      #- /var/run/docker.sock:/var/run/docker.sock
     environment:
       - SONAR_URL=http://sonarqube:9000
