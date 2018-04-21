@@ -1,4 +1,4 @@
-FROM    jenkins/jenkins
+FROM    jenkins/jenkins:2.107
 
 # User root for installs
 USER    root
